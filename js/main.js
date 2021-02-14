@@ -11,9 +11,18 @@ console.log(months);
 let tahun = today.getFullYear();
 console.log(tahun);
 
-let jam = today.getHours();
-let menit = today.getMinutes();
-
 document.getElementById('tanggal').innerHTML=`${months}, ${tanggal} ${tahun}`;
-document.getElementById('waktu').innerHTML=`${jam}.${menit}`;
 
+
+var span = document.getElementById('span');
+
+function time() {
+  var d = new Date();
+  var s = d.getSeconds();
+  var m = d.getMinutes();
+  var h = d.getHours();
+  span.textContent = 
+    ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2) + ":" + ("0" + s).substr(-2);
+}
+
+setInterval(time, 1000);
