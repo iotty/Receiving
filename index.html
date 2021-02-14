@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receiving</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container container--dark container-skewed-left">
+      <div class="container-area">
+        <div class="nav">
+          <ul>
+            <a href="#">Home</a>
+          </ul>
+          <ul>
+            <a href="#">Inventory</a>
+          </ul>
+          <ul>
+            <a href="/">Receiving</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container no-padding">
+      <div class="container-area">
+        <div class="user">
+          <div class="user__body">
+            <div class="user__name">John Doe</div>
+            <div class="user__position">Inventory Officer</div>
+          </div>
+          <img class="user__picture" src="image/avataaars.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Time -->
+    <div class="time container">
+      <div class="container-area">
+        <p class="time__item">
+          <span class="bold-please">Date</span> : <span id="tanggal"></span>
+        </p>
+        <p class="time__item">
+          <span class="bold-please">Time</span> : <span id="waktu"></span> UTC+7
+        </p>
+      </div>
+    </div>
+
+    <!-- Component for Input SKUs -->
+    <div class="container no-padding">
+      <div class="container-area">
+        <form class="form" action="">
+          <label class="form__label" for="sku">Enter SKU :</label>
+          <div class="form__body">
+            <input
+              class="form__input"
+              placeholder="99800937CDF745"
+              type="text"
+              name=""
+              id="sku"
+            />
+            <button class="btn" type="form__submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-area">
+        <a href="" class="link-arrow">Check Availibility</a>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <p>made by <span class="bold-please">stufu team</span></p>
+      </div>
+    </footer>
+    <script src="js//main.js"></script>
+  </body>
+</html>
